@@ -50,7 +50,7 @@ input {
 }
 
 .errorInput {
-  border: #db5a5a solid 2px;
+  border: #db5a5a solid 1px;
   border-top: none;
   border-left: none;
   border-right: none;
