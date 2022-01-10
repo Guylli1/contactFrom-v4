@@ -49,13 +49,20 @@ input {
   padding-bottom: 15px;
 }
 
+.errorInput {
+  border: #db5a5a solid 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: 0.3s;
+}
+
 .input1 {
   position: relative;
   padding-bottom: 5px;
   margin-bottom: 5px;
   font-family: Poppins-Medium;
   font-size: 7px;
-  border: none;
   color: #6d6868ab;
 }
 
@@ -170,11 +177,6 @@ button {
 
 button:hover {
   cursor: pointer;
-}
-
-.errorInput {
-  border: 2px solid #db5a5a !important;
-  padding: 10px;
 }
 
 #spanErrorEmail,
