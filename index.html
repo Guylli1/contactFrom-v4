@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactFrom-v4</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400&family=Rubik:wght@300&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="primary-container">
+      <div class="secondary-container">
+        <form>
+          <!---------title-------------->
+          <h2 class="title">Say Hello!</h2>
+
+          <!---------NAME--------------->
+          <div class="input1" onsubmit="validation()">
+            <label class="font">Your Name</label>
+            <input
+              id="name"
+              class="input2"
+              required
+              type="text"
+              placeholder="Enter your name"
+            />
+            <span class="error"></span>
+            <hr />
+          </div>
+
+          <!----------EMAIL------------->
+          <div class="input1" onsubmit="validation()">
+            <label class="font">Email</label>
+            <input
+              id="email"
+              class="input2"
+              required
+              type="email"
+              placeholder="Enter your email addess"
+            />
+            <span class="error"></span>
+            <hr />
+          </div>
+
+          <!----------NEEDED SERVICES------------->
+          <div class="input1">
+            <span class="font">Needed Services</span>
+            <div>
+              <select class="choose-service">
+                <option>Choose Services</option>
+                <option value="Option1">Option1</option>
+                <option value="Option2">Option2</option>
+              </select>
+              <!----------ARROWS------------->
+              <span class="custom-arrow"></span>
+            </div>
+            <hr />
+          </div>
+
+          <!----------BUDGET------------->
+          <div class="input1">
+            <span class="font">Budget</span>
+            <div>
+              <select class="select-budget" class="custom-select" name="budget">
+                <option value="Select Budget">Select Budget</option>
+                <option value="Option1">Option1</option>
+                <option value="Option2">Option2</option>
+              </select>
+              <span class="custom-arrow"></span>
+            </div>
+            <hr />
+          </div>
+
+          <!----------message------------->
+          <div class="input1">
+            <span class="font">Message</span>
+            <textarea
+              id="message"
+              cols="20"
+              rows="3"
+              class="input2"
+              name="message"
+              placeholder="Your message here..."
+            ></textarea>
+            <hr class="space" />
+          </div>
+          <!--------button----------->
+          <div>
+            <button type="button" id="btn">Submit &#10141;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
