@@ -19,6 +19,16 @@ button.addEventListener('click', event => {
     spanErrorEmail.style.display = 'none'
   }
 
+  if (
+    email.value.indexOf('@') == -1 ||
+    email.value.indexOf('.') == -1 ||
+    (email.value.indexOf('.') == 1 - email.value.indexOf('@')) == 1
+  ) {
+    spanErrorEmail.style.display = 'block'
+  } else {
+    spanErrorEmail.style.display = 'none'
+  }
+
   if (name.value == '') {
     name.classList.add('errorInput')
   } else {
