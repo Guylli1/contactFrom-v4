@@ -80,7 +80,7 @@ input {
 
 select {
   width: 100%;
-  font-size: 12px;
+  font-size: 10px;
   padding-bottom: 7px;
   padding-top: 8px;
   appearance: none;
@@ -105,6 +105,7 @@ textarea {
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 15px;
   color: 8b8888bb;
+  resize: none;
 }
 
 ::placeholder {
@@ -185,17 +186,3 @@ button:hover {
   font-size: 10px;
   display: none;
 }
-
-/*
-hr {
-  width: 100%;
-  margin: 1px solid;
-  margin-top: 10px;
-  border-bottom: 0 #f0e3e3;
-}
-
-#select-line {
-  border: block;
-  margin-bottom: 12px;
-}
-*/
